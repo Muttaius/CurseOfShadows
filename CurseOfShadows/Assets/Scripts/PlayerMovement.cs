@@ -1,3 +1,4 @@
+//Coded by Keith Morrison 09/05/23
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,25 +32,6 @@ public class PlayerMovement : MonoBehaviour
         physicsBody.velocity = newVelocity;
     }
 
-    public void Jump()
-    {
-        if (groundSensor.IsTouchingLayers(groundLayer))
-        {
-            Vector2 newVelocity = physicsBody.velocity;
-            newVelocity.y = jumpSpeed;
-            physicsBody.velocity = newVelocity;
-        }
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+ 
+    
 }

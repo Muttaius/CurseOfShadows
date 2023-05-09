@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 6f643d8ebe6971e4b940afb6cc570140
+labels:
+- Slope
 NativeFormatImporter:
   externalObjects: {}
   mainObjectFileID: 11400000
