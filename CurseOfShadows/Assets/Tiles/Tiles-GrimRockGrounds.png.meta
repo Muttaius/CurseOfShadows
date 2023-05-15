@@ -205,7 +205,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 16}
+        - {x: 16, y: 3}
+        - {x: 16, y: -16}
       tessellationDetail: 0
       bones: []
       spriteID: b850f86f48d13bc408dab0347824e152
@@ -226,7 +230,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 2}
+        - {x: 16, y: -9}
+        - {x: 16, y: -16}
       tessellationDetail: 0
       bones: []
       spriteID: a9b395b6078a19849933534769abe8fe
@@ -552,7 +560,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 15}
+        - {x: 16, y: -1}
+        - {x: 16, y: -16}
       tessellationDetail: 0
       bones: []
       spriteID: 5bfc6f1a1a0fe8c42a50a17436b1210d
@@ -573,7 +585,11 @@ TextureImporter:
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
-      physicsShape: []
+      physicsShape:
+      - - {x: -16, y: -16}
+        - {x: -16, y: 0}
+        - {x: 16, y: -16}
+        - {x: 16, y: -16}
       tessellationDetail: 0
       bones: []
       spriteID: 814ebff4026482b40ba0179b426ce65b
@@ -2856,8 +2872,8 @@ TextureImporter:
       Tiles-GrimRockGrounds_75: -2043998122
       Tiles-GrimRockGrounds_52: -634499269
       Tiles-GrimRockGrounds_99: -1820893404
-      Tiles-GrimRockGrounds_2: 922628657
       Tiles-GrimRockGrounds_24: -87106833
+      Tiles-GrimRockGrounds_2: 922628657
       Tiles-GrimRockGrounds_29: -1802657718
   spritePackingTag: 
   pSDRemoveMatte: 0
