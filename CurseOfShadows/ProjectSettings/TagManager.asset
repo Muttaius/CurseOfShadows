@@ -8,7 +8,7 @@ TagManager:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Level
   - Water
   - UI
   - Ground
@@ -38,6 +38,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Background 2 electric boogaloo
+    uniqueID: 2874517131
+    locked: 0
+  - name: background
+    uniqueID: 1673525979
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Foreground
+    uniqueID: 1461921141
+    locked: 0
+  - name: Foreground 2 electric boogaloo
+    uniqueID: 312522885
     locked: 0
