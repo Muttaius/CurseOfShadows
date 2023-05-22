@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour
         physicsBody.velocity = newVelocity;
     }
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -38,8 +39,21 @@ public class PlayerMovement : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
+        // Get rigidbody from our player & check speed
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
+        float currentSpeedH = ourRigidbody.velocity.x;
+        float currentSpeedV = ourRigidbody.velocity.y;
+
+        // Get the animator
+        Animator ourAnimator = GetComponent<Animator>();
+
+        // Tell animator what the speeds are
+        ourAnimator.SetFloat("speedH", currentSpeedH);
+        ourAnimator.SetFloat("speedV", currentSpeedV);
 
     }
 }
+
