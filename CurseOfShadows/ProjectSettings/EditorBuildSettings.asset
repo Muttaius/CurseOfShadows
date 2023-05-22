@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Town.unity
+    guid: 7a970bf31901ae04fa3c1ba68331d34f
+  - enabled: 1
+    path: Assets/Scenes/Respawn.unity
+    guid: ecdc3db6fe7987249a6d3fffab4d07e9
+  - enabled: 1
+    path: Assets/Scenes/Outskirts.unity
+    guid: 3c6ec21c4dc33c541b08c6498410adbe
+  - enabled: 1
+    path: Assets/Scenes/Forest.unity
+    guid: 29a40aaf32dd9c542a14d4db01d719bf
   m_configObjects: {}
