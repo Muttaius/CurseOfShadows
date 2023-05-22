@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 2;
     public Collider2D groundSensor = null;
     public LayerMask groundLayer = 0;
+    public float jumpSpeed = 10;
 
     private void Awake()
     {
@@ -18,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     public void MoveLeft()
     {
         Vector2 newVelocity = physicsBody.velocity;
-        //set our new velocity to move in negative x (left) direction
+        //set velocity to move in -x (left) direction
         newVelocity.x = -speed;
         physicsBody.velocity = newVelocity;
     }
@@ -26,9 +27,19 @@ public class PlayerMovement : MonoBehaviour
     public void MoveRight()
     {
         Vector2 newVelocity = physicsBody.velocity;
-        //set our new velocity to move in negative x (right) direction
+        //set velocity to move in +x (right) direction
         newVelocity.x = +speed;
         physicsBody.velocity = newVelocity;
+    }
+
+    public void Jump()
+    {
+        if (groundSensor.IsTouchingLayers(groundLayer))
+        {
+            Vector2 newVelocity = physicsBody.velocity;
+            newVelocity.y = jumpSpeed;
+            physicsBody.velocity = newVelocity;
+        }
     }
 
 
@@ -44,15 +55,15 @@ public class PlayerMovement : MonoBehaviour
         // Get rigidbody from our player & check speed
         Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
 
-        float currentSpeedH = ourRigidbody.velocity.x;
-        float currentSpeedV = ourRigidbody.velocity.y;
+        float currentspeedH = ourRigidbody.velocity.x;
+        float currentspeedV = ourRigidbody.velocity.y;
 
         // Get the animator
         Animator ourAnimator = GetComponent<Animator>();
 
         // Tell animator what the speeds are
-        ourAnimator.SetFloat("speedH", currentSpeedH);
-        ourAnimator.SetFloat("speedV", currentSpeedV);
+        ourAnimator.SetFloat("speedH", currentspeedH);
+        ourAnimator.SetFloat("speedV", currentspeedV);
 
     }
 }

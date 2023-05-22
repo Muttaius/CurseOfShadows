@@ -33,7 +33,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -69,7 +69,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -2755,8 +2755,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Tiles-GrimRockGrounds_5: 988333393
-      Tiles-GrimRockGrounds_49: 911629893
+      Tiles-GrimRockGrounds_24: -87106833
+      Tiles-GrimRockGrounds_29: -1802657718
       Tiles-GrimRockGrounds_100: -1582567678
       Tiles-GrimRockGrounds_70: 16056712
       Tiles-GrimRockGrounds_121: -1721542444
@@ -2876,9 +2876,9 @@ TextureImporter:
       Tiles-GrimRockGrounds_75: -2043998122
       Tiles-GrimRockGrounds_52: -634499269
       Tiles-GrimRockGrounds_99: -1820893404
-      Tiles-GrimRockGrounds_24: -87106833
       Tiles-GrimRockGrounds_2: 922628657
-      Tiles-GrimRockGrounds_29: -1802657718
+      Tiles-GrimRockGrounds_49: 911629893
+      Tiles-GrimRockGrounds_5: 988333393
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

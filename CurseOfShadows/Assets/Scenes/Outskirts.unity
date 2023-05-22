@@ -4676,6 +4676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8ec492acf9413a43b7be50805b2cf84, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetScene: Town
 --- !u!1 &1946578967
 GameObject:
   m_ObjectHideFlags: 0
