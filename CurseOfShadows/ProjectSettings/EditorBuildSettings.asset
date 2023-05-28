@@ -15,7 +15,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Respawn.unity
     guid: ecdc3db6fe7987249a6d3fffab4d07e9
   - enabled: 1
-    path: Assets/Scenes/Outskirts.unity
+    path: Assets/Scenes/Outskirts-maybe.unity
     guid: 3c6ec21c4dc33c541b08c6498410adbe
   - enabled: 1
     path: Assets/Scenes/Forest.unity
