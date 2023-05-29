@@ -10,17 +10,27 @@ public class PlayerSword : MonoBehaviour
     public GameObject swordPerfab;
     public Vector2 projectileVelocity; //made public to change as and when required.
     public Vector3 offset;/// public variable to be added for offset 
-    public float cooldown = 3; //number of seconds attack projectile lasts
-
-    private float startTime; //timestamp that timer begins
+    public float cooldown = 3; //cooldown on weapon attack
+    public float timer = 0f;
 
 
     private void Update()
     {
-        if (Time.time >= startTime + cooldown)
+        if (timer <= 0f)
         {
-            SwordAttack();
+            if (Time.time >= timer + cooldown)
+            {
+                SwordAttack();
+                timer = cooldown; //start the cooldown timer
+            }
+            
         }
+
+        else
+        {
+            timer -= Time.deltaTime;
+        }
+
     }
 
 
