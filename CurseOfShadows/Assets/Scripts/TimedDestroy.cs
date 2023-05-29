@@ -27,5 +27,7 @@ public class TimedDestroy : MonoBehaviour
             //destroy object
             Destroy(gameObject);
         }
+
+    
     }
 }
