@@ -18,7 +18,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void damage(int damageAmount)
     {
-        enemyHealth = currentEnemyHealth + damageAmount;
+        enemyHealth = currentEnemyHealth - damageAmount;
 
         currentEnemyHealth = Mathf.Clamp(currentEnemyHealth, 0, enemyHealth);
     
