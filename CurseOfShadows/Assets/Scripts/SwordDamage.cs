@@ -1,27 +1,28 @@
 //Coded by Keith Morrison 26/05/23
-using System.Collections;
-using System.Collections.Generic;
+//and me CUZ IM COOL
 using UnityEngine;
 
 public class SwordDamage : MonoBehaviour
 {
+    public int Damage = 1; // Damage caused to enemy
 
-    //Condition - when sword hits, do damage to enemy
-    public int Damage = 0; //damage caused to enemy
-    void OnTriggerEnter2D(Collider2D othercollider)
+    void OnTriggerEnter2D(Collider2D otherCollider)
     {
-        //checks for tag on object
-        if (othercollider.CompareTag("Enemy") == true)
+        // Check for enemy tag on object
+        if (otherCollider.CompareTag("Enemy"))
         {
-            //Do damage
-            DamageEnemy(othercollider.gameObject);
+            // Do damage
+            DamageEnemy(otherCollider.gameObject);
         }
     }
 
-    public void DamageEnemy(GameObject enemy) //script to damage enemy
+    public void DamageEnemy(GameObject enemy) //doing damage script. 
     {
-        //enemy.TakeDamage(Damage);     
+        EnemyBehaviour enemyBehaviour = enemy.GetComponent<EnemyBehaviour>();
+        if (enemyBehaviour != null)
+        {
+            enemyBehaviour.TakeHit(Damage);
+        }
     }
-
-
 }
+

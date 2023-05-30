@@ -45,7 +45,7 @@ public class PlayerSword : MonoBehaviour
 
     public void SwordAttack()
     {
-        if(!isCooldown) //if isCooldown is false allows button to be pressed.
+        if (!isCooldown) //if isCooldown is false allows button to be pressed.
         {
             //clone projectile
             GameObject clonedProjectile;
@@ -74,13 +74,21 @@ public class PlayerSword : MonoBehaviour
 
             isCooldown = true; //changes bool value to isColldown to true
             cooldownTimer = cooldown; //sets time for cooldownTimer based on public variable
+
+
+
+
         }
 
     }
+
+
+
+}
    
     
             
 
     
 
-}
+

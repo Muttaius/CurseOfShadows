@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3466609310690104787}
   - component: {fileID: 5041944324589855500}
   - component: {fileID: 2017406186148958150}
+  - component: {fileID: 2337581629527775739}
   m_Layer: 0
   m_Name: SwordProjectile
   m_TagString: Untagged
@@ -28,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8729239871615541707}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.0582, y: -0.5847, z: 0}
+  m_LocalPosition: {x: -0.79, y: -0.88, z: 0}
   m_LocalScale: {x: 2.1554267, y: 0.72263813, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -100,7 +101,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 2, y: 0}
+  m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -147,3 +148,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifespan: 1
+--- !u!114 &2337581629527775739
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8729239871615541707}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 93cddf711c8659c45afed54509b7b9ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Damage: 1
