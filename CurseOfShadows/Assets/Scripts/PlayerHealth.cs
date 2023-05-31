@@ -59,13 +59,23 @@ public class PlayerHealth : MonoBehaviour
     // This function will kill the player
     public void Kill()
     {
-        // Send player back to scene
+        Animator playerAnimator; //get player animator
+        playerAnimator = GetComponent<Animator>();
+        playerAnimator.SetTrigger("death"); //play death trigger animation
+
+        StartCoroutine(ChangeSceneWithDelay()); //calls function to delay changing scene
+    }
+    
+    IEnumerator ChangeSceneWithDelay() //delays ChangeScene for 2 seconds to allow death animation to play
+    {
+            yield return new WaitForSeconds(2f); // yield used together with return keyword to provide a value to the enumerator object
+
         ChangeScene();
     }
 
     public void ChangeScene()
     {
-        SceneManager.LoadScene(targetScene);
+        SceneManager.LoadScene(targetScene); //loads scene set in unity
     }
 
     // Allows other scripts ask this one what the current health is
