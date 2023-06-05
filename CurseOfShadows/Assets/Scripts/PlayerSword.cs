@@ -10,23 +10,43 @@ public class PlayerSword : MonoBehaviour
     public GameObject swordPerfab;
     public Vector2 projectileVelocity; //made public to change as and when required.
     public Vector3 offset;/// public variable to be added for offset 
-    public float cooldown = 3; //number of seconds attack projectile lasts
+    public float cooldown = 5.0f; //cooldown on weapon attack
+    private float cooldownTimer = 0.0f;
+    private bool isCooldown = false;
 
-    private float startTime; //timestamp that timer begins
+
 
 
     private void Update()
     {
-        if (Time.time >= startTime + cooldown)
+
+        if (isCooldown)
         {
-            SwordAttack();
+
+            ApplyCooldown(); //applies cooldown script making button unaccessable
+
         }
+
     }
 
 
-    //Action - fire sword projectile
+    void ApplyCooldown()
+    {
+        //subtract time since last called
+        cooldownTimer -= Time.deltaTime;
+
+        if (cooldownTimer < 0.0f) //when cooldown is at 0 changes isCooldown bool value
+        {
+            isCooldown = false; //removes cooldown by changing bool to true
+
+        }
+
+    }
+
     public void SwordAttack()
     {
+        if (!isCooldown) //if isCooldown is false allows button to be pressed.
+        {
             //clone projectile
             GameObject clonedProjectile;
 
@@ -51,9 +71,24 @@ public class PlayerSword : MonoBehaviour
             //get animation already attached
             playerAnimator = GetComponent<Animator>();
             playerAnimator.SetTrigger("attack");
+
+            isCooldown = true; //changes bool value to isColldown to true
+            cooldownTimer = cooldown; //sets time for cooldownTimer based on public variable
+
+
+
+
+        }
+
     }
+
+
+
+}
+   
+    
             
 
     
 
-}
+

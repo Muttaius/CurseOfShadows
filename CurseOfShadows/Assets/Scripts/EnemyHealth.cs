@@ -4,31 +4,25 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    //starting health of the attached enemy
-    public int EnemystartingHealth;
 
+    //starting enemy health
+    public int enemyHealth;
 
-    public int currentHealth;
+    //active interactable health
+    int currentEnemyHealth;
 
-    private void Awake()
+    void Awake()
     {
-        //setting health when spawned
-        currentHealth = EnemystartingHealth;
+        currentEnemyHealth = enemyHealth;
     }
-    //function that modifies heath
-    public void ChangeHealth(int Damage)
+
+    public void damage(int damageAmount)
     {
+        enemyHealth = currentEnemyHealth - damageAmount;
 
-        //changes health
-        currentHealth = currentHealth + Damage;
-
-        //sets minimum hp to 0
-        currentHealth = Mathf.Clamp(currentHealth, 0, EnemystartingHealth);
-
-
-
-        //plays Kill() enemy when 0 hp
-        if (currentHealth == 0);
+        currentEnemyHealth = Mathf.Clamp(currentEnemyHealth, 0, enemyHealth);
+    
+     if (enemyHealth == 0)
         {
 
             Kill();
