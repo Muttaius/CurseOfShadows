@@ -4,25 +4,19 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-  
 
     public GameObject SkeletonSwordsman;
+    public GameObject spawnPosition;
 
-    private void Start()
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        spawnenemy();
+        if (other.CompareTag("Player"))
+        {
+           
+            Instantiate(SkeletonSwordsman, spawnPosition.transform.position, Quaternion.identity);
+            Destroy(gameObject);
+        }
     }
-
-    public void spawnenemy()
-    {
-
-        GameObject ClonedSkeletonSwordsman;
-        ClonedSkeletonSwordsman = Instantiate(SkeletonSwordsman);
-        ClonedSkeletonSwordsman.transform.position = transform.position;
-
-        Rigidbody2D ClonedSkeletonSwordsmanBody;
-        ClonedSkeletonSwordsmanBody = ClonedSkeletonSwordsman.GetComponent<Rigidbody2D>();
-    }
-
 
 }
