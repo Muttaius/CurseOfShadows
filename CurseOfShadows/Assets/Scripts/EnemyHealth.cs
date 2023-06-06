@@ -32,7 +32,33 @@ public class EnemyHealth : MonoBehaviour
 
     public void Kill()
     {
-        Destroy(gameObject);
+        Animator playerAnimator; //get player animator
+        playerAnimator = GetComponent<Animator>();
+        playerAnimator.SetTrigger("death"); //play death trigger animation
+        GetComponent<CapsuleCollider2D>();
+        CapsuleCollider2D capsuleCollider = GetComponent<CapsuleCollider2D>(); //gets capsule collider so sprite when dead will allow player to walk over corpse without collision
+
+        if (capsuleCollider != null) //check if capsule is present. 
+        {
+            Destroy(capsuleCollider.gameObject); //if present destroy collider
+        }
+
+        StartCoroutine(DestroySpriteWithDelay());
+    }
+
+    IEnumerator DestroySpriteWithDelay()
+    {
+
+        yield return new WaitForSeconds(5f); //delay of sprite dead on ground before deleting object
+
+        SpriteKill();
 
     }
+
+    public void SpriteKill()
+   
+    {
+        Destroy(gameObject);
+    }
+    
 }
