@@ -278,8 +278,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8725913302fb806439ac87698a3e9a02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hitpoints: 10
-  MaxHitpoints: 10
+  Hitpoints: 20
+  MaxHitpoints: 20
   HealthBar: {fileID: -1219040350969340419}
 --- !u!114 &-1219040350969340419
 MonoBehaviour:

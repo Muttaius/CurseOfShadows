@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: SkeletonSwordDeath
+  m_Name: KnightDie
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -29,6 +29,15 @@ AnimationClip:
         weightedMode: 0
         inWeight: 0
         outWeight: 0
+      - serializedVersion: 3
+        time: 5.1
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -39,15 +48,19 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: -1295408235, guid: 8a005723eecd7e643a4157aaac15fa1e, type: 3}
+      value: {fileID: -1740301965, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
     - time: 0.16666667
-      value: {fileID: -255309353, guid: 8a005723eecd7e643a4157aaac15fa1e, type: 3}
+      value: {fileID: 250913396, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
     - time: 0.33333334
-      value: {fileID: 1251492807, guid: 8a005723eecd7e643a4157aaac15fa1e, type: 3}
+      value: {fileID: -1968277874, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
     - time: 0.5
-      value: {fileID: 1249202789, guid: 8a005723eecd7e643a4157aaac15fa1e, type: 3}
-    - time: 5.5
-      value: {fileID: 1249202789, guid: 8a005723eecd7e643a4157aaac15fa1e, type: 3}
+      value: {fileID: 1265507118, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
+    - time: 0.6666667
+      value: {fileID: 851560861, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
+    - time: 0.8333333
+      value: {fileID: 254859708, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
+    - time: 5.1
+      value: {fileID: -1740301965, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -74,17 +87,19 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: -1295408235, guid: 8a005723eecd7e643a4157aaac15fa1e, type: 3}
-    - {fileID: -255309353, guid: 8a005723eecd7e643a4157aaac15fa1e, type: 3}
-    - {fileID: 1251492807, guid: 8a005723eecd7e643a4157aaac15fa1e, type: 3}
-    - {fileID: 1249202789, guid: 8a005723eecd7e643a4157aaac15fa1e, type: 3}
-    - {fileID: 1249202789, guid: 8a005723eecd7e643a4157aaac15fa1e, type: 3}
+    - {fileID: -1740301965, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
+    - {fileID: 250913396, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
+    - {fileID: -1968277874, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
+    - {fileID: 1265507118, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
+    - {fileID: 851560861, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
+    - {fileID: 254859708, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
+    - {fileID: -1740301965, guid: 6d6f05ca17ac6ef40a0c0c1793fa7acd, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 5.516667
+    m_StopTime: 5.116667
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -105,6 +120,15 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 5.1
         value: 1
         inSlope: Infinity
         outSlope: Infinity
