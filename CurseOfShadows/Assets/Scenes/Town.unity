@@ -8408,10 +8408,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: -6080872462630998556, guid: 0008a8f65dd5087479e329f4110cf2f6, type: 3}
-      propertyPath: forceStrength
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 1138483683676343970, guid: 0008a8f65dd5087479e329f4110cf2f6, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -8463,10 +8459,6 @@ PrefabInstance:
     - target: {fileID: 2324629343818388658, guid: 0008a8f65dd5087479e329f4110cf2f6, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8836470203538682437, guid: 0008a8f65dd5087479e329f4110cf2f6, type: 3}
-      propertyPath: m_LinearDrag
-      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0008a8f65dd5087479e329f4110cf2f6, type: 3}

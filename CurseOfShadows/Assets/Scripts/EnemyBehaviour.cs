@@ -36,8 +36,10 @@ public class EnemyBehaviour : MonoBehaviour
 
         if (gravity != null) //checks gravity on rigidbody
         {
-            gravity.gravityScale = 0f; //set gravity on sprite to 0 so it doesn't fall through the level.
-            gravity.drag = 1000f; 
+            float currentspeedH = gravity.velocity.x;
+            enemyAnimator = GetComponent<Animator>();
+            enemyAnimator.SetFloat("speedH", 0);
+            gravity.gravityScale = 0;
         }
 
         EnemyMovement movement = GetComponent<EnemyMovement>(); //gets enemy movement script
@@ -54,6 +56,9 @@ public class EnemyBehaviour : MonoBehaviour
         {
             Destroy(capsuleCollider); //if present destroy collider
         }
+
+        PlayerDetector noAttack = GetComponent<PlayerDetector>();
+
 
         StartCoroutine(DestroySpriteWithDelay());
     }

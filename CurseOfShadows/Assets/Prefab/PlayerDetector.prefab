@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7274287550209523912}
   - component: {fileID: -4453389082245019184}
   - component: {fileID: 7832641250174717856}
+  - component: {fileID: 118798950412537577}
   m_Layer: 0
   m_Name: PlayerDetector
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -125,5 +126,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerDetected: 0
-  playerDetecorPrefab: {fileID: 0}
+  playerDetectorPrefab: {fileID: 0}
   offset: {x: 0, y: 0, z: 0}
+--- !u!114 &118798950412537577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 450832469761011693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54604cd2312b2c34e8782a2022610610, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  lifespan: 0.01

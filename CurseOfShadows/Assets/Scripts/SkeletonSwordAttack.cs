@@ -8,7 +8,7 @@ public class SkeletonSwordAttack : MonoBehaviour
 
     //Unity editor variables
     public GameObject skeletonSwordPrefab;
-    public GameObject playerDetectorPrefab;
+    public PlayerDetector sensor;
     public Vector2 projectileVelocity; //made public to change as and when required.
     public Vector3 detectorOffset;/// public variable to be added for offset 
     public Vector3 attackOffset;
@@ -21,37 +21,26 @@ public class SkeletonSwordAttack : MonoBehaviour
 
     private void Update()
     {
-        
 
-         //clone projectile
-         GameObject clonedProjectile;
-
-         //Command to clone projectile and keep result in variable
-         clonedProjectile = Instantiate(playerDetectorPrefab);
-
-         //position projectile on player
-         clonedProjectile.transform.position = transform.position + detectorOffset;
-        
-
-
-        PlayerDetector detected = GetComponent<PlayerDetector>(); //gets player detector script
-
-        if (detected.playerDetected) //check if player detected
+        if (sensor.playerDetected) //check if player detected
         {
-            detected.playerDetected = true;
 
             EnemyMovement HoldPosition = GetComponent<EnemyMovement>(); //stop sprite from continuing to move towards left of screen
             if (HoldPosition != null)
             {
-                HoldPosition.forceStrength = 0; //sets force of sprite movement to 0
-                HoldPosition.direction = Vector2.zero; //sets direction of sprite movement to 0
+                HoldPosition.enabled = false;
+                //HoldPosition.forceStrength = 0; //sets force of sprite movement to 0
+                //HoldPosition.direction = Vector2.zero; //sets direction of sprite movement to 0
             }
 
             Rigidbody2D gravity = GetComponent<Rigidbody2D>(); //gravity checker on rigidbody on death to stop enemy sprite falling through level.
 
             if (gravity != null) //checks drag on rigidbody
-            { 
-                gravity.drag = 1000f; //sets high drag to aid in stopping sprite from moving
+            {
+                float currentspeedH = gravity.velocity.x;
+                Animator enemyAnimator;
+                enemyAnimator = GetComponent<Animator>();
+                enemyAnimator.SetFloat("speedH", 0);
             }
 
             if (isCooldown)
@@ -60,11 +49,24 @@ public class SkeletonSwordAttack : MonoBehaviour
                 ApplyCooldown(); //applies cooldown script on enemy attack
 
             }
+            else
+            {
+                //have detected but not in cooldown
+                SkeletonAttack();
+            }
+
+
+
         }
 
         else
         {
 
+            EnemyMovement HoldPosition = GetComponent<EnemyMovement>(); //stop sprite from continuing to move towards left of screen
+            if (HoldPosition != null)
+            {
+                HoldPosition.enabled = true;
+            }
         }
 
     }
@@ -75,10 +77,14 @@ public class SkeletonSwordAttack : MonoBehaviour
         //subtract time since last called
         cooldownTimer -= Time.deltaTime;
 
-        if (cooldownTimer < 0.0f) //when cooldown is at 0 changes isCooldown bool value
+        if (cooldownTimer <= 0.0f) //when cooldown is at 0 changes isCooldown bool value
         {
-            isCooldown = false; //removes cooldown by changing bool to true
+            isCooldown = false; //removes cooldown by changing bool to false
+        }
 
+        else
+        {
+            //cooldown is true
         }
 
     }
@@ -102,13 +108,9 @@ public class SkeletonSwordAttack : MonoBehaviour
             //Get rigid body from the cloned object
             projectileRigidbody = clonedProjectile.GetComponent<Rigidbody2D>();
 
-            //sets velocity on rigidbody
-            projectileRigidbody.velocity = projectileVelocity;
 
             //Play attack animation
             Animator enemyAnimator;
-
-            //get animation already attached
             enemyAnimator = GetComponent<Animator>();
             enemyAnimator.SetTrigger("attack");
 
