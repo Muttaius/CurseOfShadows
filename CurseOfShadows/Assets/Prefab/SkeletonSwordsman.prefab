@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 1244898211795296841}
   - component: {fileID: -1219040350969340419}
   - component: {fileID: -6080872462630998556}
+  - component: {fileID: 144413744622570672}
   m_Layer: 0
   m_Name: SkeletonSwordsman
   m_TagString: Enemy
@@ -311,6 +312,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   forceStrength: 1
   direction: {x: -1, y: 0}
+--- !u!114 &144413744622570672
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2324629343818388621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b48e1888c17f79459a658ab75396ce2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skeletonSwordPrefab: {fileID: 8225982583400892444, guid: a368463476581fb45ad17d96f38af187, type: 3}
+  playerDetectorPrefab: {fileID: 450832469761011693, guid: d478f6c94f508ca4393ea4cfe2a4429a, type: 3}
+  projectileVelocity: {x: 0, y: 0}
+  detectorOffset: {x: -2, y: 0, z: 0}
+  attackOffset: {x: -1.5, y: 0, z: 0}
+  cooldown: 3
 --- !u!1 &4228157169128655958
 GameObject:
   m_ObjectHideFlags: 0
