@@ -31,7 +31,7 @@ public class PlayerHealth : MonoBehaviour
     public void ChangeHealth(int changeAmount)
     {
         // Take our current health, add the change amount, and store the result back in the current health variable
-        currentHealth = currentHealth + changeAmount;
+        currentHealth = currentHealth - changeAmount;
 
         // Prevents health going below 0 or above 100
         currentHealth = Mathf.Clamp(currentHealth, 0, startingHealth);

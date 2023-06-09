@@ -16,8 +16,7 @@ public class PlayerDetector : MonoBehaviour
     {
         
         if (collision.CompareTag("Player")) //checks tag, if player change value to true and trigger attack
-        {
-            Debug.Log("Player Detected");
+        { 
             playerDetected = true;
         }
 
@@ -28,7 +27,6 @@ public class PlayerDetector : MonoBehaviour
 
         if (collision.CompareTag("Player")) 
         {
-            Debug.Log("Player Exit");
             playerDetected = false; //if no player detected, will not trigger enemy to attack.
         }
     }
