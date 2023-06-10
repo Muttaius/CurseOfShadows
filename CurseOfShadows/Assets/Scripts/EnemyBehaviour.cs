@@ -57,8 +57,12 @@ public class EnemyBehaviour : MonoBehaviour
             Destroy(capsuleCollider); //if present destroy collider
         }
 
-        PlayerDetector noAttack = GetComponent<PlayerDetector>();
+        SkeletonSwordAttack noAttack = GetComponent<SkeletonSwordAttack>(); //destroys enemy attack on enemy death so enemy can't attack when dead.
 
+        if (noAttack != null)
+        {
+            Destroy(noAttack);
+        }
 
         StartCoroutine(DestroySpriteWithDelay());
     }
