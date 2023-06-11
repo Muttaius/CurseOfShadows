@@ -467,7 +467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skeletonSwordPrefab: {fileID: 3558077744684838715, guid: 54e76dff74d26f1479120f9b74bfc59b, type: 3}
-  sensor: {fileID: 6028519969420752786}
+  sensor: {fileID: 0}
   projectileVelocity: {x: 0, y: 0}
   detectorOffset: {x: 0, y: 0, z: 0}
   attackOffset: {x: -1.5, y: 0, z: 0}
@@ -684,14 +684,22 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4226526008319416805, guid: d478f6c94f508ca4393ea4cfe2a4429a, type: 3}
   m_PrefabInstance: {fileID: 4547152721946376242}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &6028519969420752786 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7832641250174717856, guid: d478f6c94f508ca4393ea4cfe2a4429a, type: 3}
+--- !u!1 &4132922307758872543 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 450832469761011693, guid: d478f6c94f508ca4393ea4cfe2a4429a, type: 3}
   m_PrefabInstance: {fileID: 4547152721946376242}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+--- !u!114 &128034422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4132922307758872543}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bc8cba68434df6643a8c1bb44658c836, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerDetected: 0
+  offset: {x: 0, y: 0, z: 0}
