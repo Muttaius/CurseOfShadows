@@ -33,5 +33,19 @@ public class EnemyMovement : MonoBehaviour
     {
         //Move in direction with forcestrength
         enemyRigidBody.AddForce(direction * forceStrength);
+
+        ///Added by Keith Morrison to detect speed of sprite movement
+        // Get rigidbody from our player & check speed
+        Rigidbody2D ourRigidbody = GetComponent<Rigidbody2D>();
+
+        float currentspeedH = ourRigidbody.velocity.x;
+
+        // Get the animator
+        Animator ourAnimator = GetComponent<Animator>();
+
+        // Tell animator what the speeds are
+        ourAnimator.SetFloat("speedH", currentspeedH);
+
     }
 }
+

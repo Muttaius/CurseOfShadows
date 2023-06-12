@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class HealthDisplay : MonoBehaviour
 {
 
-    Slider healthBar; //this will contain the slider component attached to this object. Slider = variable is in form of slider component.
+    Slider healthBar; //slider component
 
     PlayerHealth player; //player health component.
 

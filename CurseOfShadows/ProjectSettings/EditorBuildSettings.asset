@@ -14,13 +14,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Respawn.unity
     guid: ecdc3db6fe7987249a6d3fffab4d07e9
-  - enabled: 0
-    path: 
-    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/Outskirts-maybe.unity
+    guid: 3c6ec21c4dc33c541b08c6498410adbe
   - enabled: 1
     path: Assets/Scenes/Forest.unity
     guid: 29a40aaf32dd9c542a14d4db01d719bf
   - enabled: 1
-    path: Assets/Scenes/Outskirts.unity
-    guid: 6ef9dbb9267c18142b4cf9b1fb32252e
+    path: Assets/Scenes/Victory.unity
+    guid: 307929028aa93204f90268a48f9a558c
   m_configObjects: {}

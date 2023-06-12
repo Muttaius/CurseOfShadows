@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemySpawner : MonoBehaviour
+public class EnemySpawner1 : MonoBehaviour
 {
     public GameObject enemyPrefab; // The enemy prefab to spawn
     public int maxEnemies = 10; // The maximum number of enemies to spawn
@@ -24,11 +24,6 @@ public class EnemySpawner : MonoBehaviour
             timer = 0f;
         }
     }
-
-    //To use this script, attach it to an empty GameObject in your scene and set the enemyPrefab variable to the prefab of the enemy you want to spawn.
-    //You can adjust the maxEnemies and spawnInterval variables to control the maximum number of enemies and the time between spawns, respectively.
-
-    //Make sure to tag your enemies with the "Enemy" tag so the script can correctly count how many enemies are currently in the scene.
-    //You can do this by selecting an enemy in your scene, clicking on the "Tag" dropdown in the Inspector, and selecting "Add Tag". Then, type "Enemy" in the "Tag" field and click the "+" button to create the tag.
-    //Finally, select the "Enemy" tag for all of your enemy GameObjects.
 }
+
+ 
