@@ -11,13 +11,17 @@ PrefabInstance:
       propertyPath: sensor
       value: 
       objectReference: {fileID: 7591917489810494870}
+    - target: {fileID: 1396895032626422262, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
+      propertyPath: skeletonSwordPrefab
+      value: 
+      objectReference: {fileID: 8729239871615541707, guid: 5ffce44250d26184ba0b85c4a69c3319, type: 3}
     - target: {fileID: 3806209064768551800, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7097007355988574730, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
       propertyPath: m_Name
-      value: Knight
+      value: Knight Variant
       objectReference: {fileID: 0}
     - target: {fileID: 7097007355988574733, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
       propertyPath: m_RootOrder

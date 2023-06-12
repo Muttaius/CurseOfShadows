@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 2017406186148958150}
   - component: {fileID: 2337581629527775739}
   m_Layer: 0
-  m_Name: SwordProjectile
+  m_Name: SwordProjectile 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

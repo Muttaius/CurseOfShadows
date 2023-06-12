@@ -22,7 +22,6 @@ public class EnemyDamage : MonoBehaviour
         if (playerHealth != null)
         {
             playerHealth.ChangeHealth(Damage);
-            Debug.Log("I am hitting you");
         }
     }
 }
