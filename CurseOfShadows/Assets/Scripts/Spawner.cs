@@ -13,7 +13,7 @@ public class Spawner : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-           
+
             Instantiate(SkeletonSwordsman, spawnPosition.transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

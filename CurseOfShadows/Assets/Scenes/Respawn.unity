@@ -727,7 +727,7 @@ GameObject:
   - component: {fileID: 529637095}
   - component: {fileID: 529637094}
   m_Layer: 5
-  m_Name: Forrest
+  m_Name: Forest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1598,7 +1598,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Forrest
+  m_text: 'Forest
 
 '
   m_isRightToLeft: 0
