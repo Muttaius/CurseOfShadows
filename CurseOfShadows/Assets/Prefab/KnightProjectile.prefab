@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3466609310690104787}
   - component: {fileID: 5041944324589855500}
   - component: {fileID: 2017406186148958150}
-  - component: {fileID: 2337581629527775739}
+  - component: {fileID: -3248856799549004965}
   m_Layer: 0
   m_Name: KnightProjectile
   m_TagString: Untagged
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lifespan: 1
---- !u!114 &2337581629527775739
+--- !u!114 &-3248856799549004965
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8729239871615541707}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 93cddf711c8659c45afed54509b7b9ce, type: 3}
+  m_Script: {fileID: 11500000, guid: b6bb3015c8d1a9349833f9d9b01ceef7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Damage: 25
+  Damage: 20

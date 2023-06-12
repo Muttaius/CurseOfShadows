@@ -21,6 +21,7 @@ public class HealthBarBehaviour : MonoBehaviour
 
     void Update() 
     { 
-        Slider.transform.position = Camera.main.WorldToScreenPoint(transform.position + Offset); 
+        //Slider.transform.position = Camera.main.WorldToScreenPoint(transform.position + Offset);
+        //Slider.transform.position = transform.position + Offset;
     } 
 }

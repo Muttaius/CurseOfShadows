@@ -452,7 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b48e1888c17f79459a658ab75396ce2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonSwordPrefab: {fileID: 8225982583400892444, guid: a368463476581fb45ad17d96f38af187, type: 3}
+  skeletonSwordPrefab: {fileID: 8729239871615541707, guid: 5ffce44250d26184ba0b85c4a69c3319, type: 3}
   sensor: {fileID: 387038927}
   projectileVelocity: {x: 0, y: 0}
   detectorOffset: {x: 0, y: 0, z: 0}

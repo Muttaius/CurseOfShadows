@@ -61,7 +61,15 @@ PrefabInstance:
       objectReference: {fileID: 3601675644806162344}
     - target: {fileID: 7495480049160188167, guid: 1996f7bb40cd4e040ba51482578c0907, type: 3}
       propertyPath: m_Name
-      value: Spearman
+      value: Spearman Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318072528199031092, guid: 1996f7bb40cd4e040ba51482578c0907, type: 3}
+      propertyPath: Hitpoints
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 8318072528199031092, guid: 1996f7bb40cd4e040ba51482578c0907, type: 3}
+      propertyPath: MaxHitpoints
+      value: 30
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1996f7bb40cd4e040ba51482578c0907, type: 3}
