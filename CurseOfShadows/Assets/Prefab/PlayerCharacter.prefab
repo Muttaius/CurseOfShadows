@@ -200,7 +200,7 @@ MonoBehaviour:
   swordPerfab: {fileID: 8729239871615541707, guid: fc1e09e7e111b8b48a0e16f61b323c0a, type: 3}
   projectileVelocity: {x: 0, y: 0}
   offset: {x: 1.5, y: 0, z: 0}
-  cooldown: 2
+  cooldown: 1.5
 --- !u!114 &1544727411670630277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
   magicPrefab: {fileID: 1879353553827988243, guid: f26ef051321c27c4684b6b6d5b5c1b52, type: 3}
   projectileVelocity: {x: 0, y: 0}
   offset: {x: 2.5, y: 0, z: 0}
-  cooldown: 20
+  cooldown: 15
 --- !u!1 &1544727412703726054
 GameObject:
   m_ObjectHideFlags: 0

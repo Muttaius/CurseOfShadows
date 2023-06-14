@@ -9,11 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 265556263132468822, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
       propertyPath: Hitpoints
-      value: 80
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 265556263132468822, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
       propertyPath: MaxHitpoints
-      value: 80
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 1396895032626422262, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
       propertyPath: sensor
@@ -61,6 +61,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3806209064768551800, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
       propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3806209064768551800, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
+      propertyPath: m_AnchoredPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4450810368537523556, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
@@ -125,11 +129,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7097007355988574733, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -6.359098
+      value: -3.69
       objectReference: {fileID: 0}
     - target: {fileID: 7097007355988574733, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.0658478
+      value: -1.07
       objectReference: {fileID: 0}
     - target: {fileID: 7097007355988574733, guid: 3c398c137c8a8e44c8c82ac0293b14d9, type: 3}
       propertyPath: m_LocalPosition.z

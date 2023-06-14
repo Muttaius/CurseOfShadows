@@ -7,6 +7,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1544727411670630276, guid: ff480d41fd960f240b3cbeb8bc65fe36, type: 3}
+      propertyPath: cooldown
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1544727411670630277, guid: ff480d41fd960f240b3cbeb8bc65fe36, type: 3}
+      propertyPath: cooldown
+      value: 15
+      objectReference: {fileID: 0}
     - target: {fileID: 1544727411670630283, guid: ff480d41fd960f240b3cbeb8bc65fe36, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -53,7 +61,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1544727411670630389, guid: ff480d41fd960f240b3cbeb8bc65fe36, type: 3}
       propertyPath: m_Name
-      value: PlayerCharacter
+      value: PlayerCharacter Variant
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ff480d41fd960f240b3cbeb8bc65fe36, type: 3}
